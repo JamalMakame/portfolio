@@ -18,19 +18,19 @@
             Skills
          </Heading>
          <div class="my-4">
-            <Progressbar progress="90" labelOutside="Html & CSS" />
+            <Progressbar progress="90" labelOutside="Html & CSS" color="yellow"/>
          </div>
          <div class="my-4">
-            <Progressbar progress="85" labelOutside="JavaScript" />
+            <Progressbar progress="85" labelOutside="JavaScript" color="yellow"/>
          </div>
          <div class="my-4">
-            <Progressbar progress="80" labelOutside="TypeScript" />
+            <Progressbar progress="80" labelOutside="TypeScript" color="yellow"/>
          </div>
          <div class="my-4">
-            <Progressbar progress="75" labelOutside="Dart" />
+            <Progressbar progress="75" labelOutside="Dart" color="yellow"/>
          </div>
          <div class="my-4">
-            <Progressbar progress="85" labelOutside="Flutter" />
+            <Progressbar progress="85" labelOutside="Flutter" color="yellow" labelInsideClass="text-yellowClr"/>
          </div>
       </div>
 

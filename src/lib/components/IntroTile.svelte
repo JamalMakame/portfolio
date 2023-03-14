@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-row justify-between">
-   <div class="w-fit bg-blue-700 p-1 rounded-lg">
+   <div class="w-fit bg-yellowClr p-1 rounded-lg">
       <P space="wide" weight="medium"><slot name="left" /></P>
    </div>
    <P weight="medium"><slot name="right" /></P>

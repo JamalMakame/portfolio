@@ -18,7 +18,7 @@
    </IntroTile>
    <IntroTile>
       <span slot="left" class="text-white">Freelance :</span>
-      <P slot="right" color="text-blue-700 dark:text-yellow">available</P>
+      <P slot="right" color="text-availableClr dark:text-yellow">available</P>
    </IntroTile>
    <IntroTile>
       <span slot="left" class="text-white">Address :</span>

@@ -1,44 +1,132 @@
 <script>
-   import { Img, Heading, P } from "flowbite-svelte";
+   import PricePlans from "../components/PricePlans.svelte";
+
+   import ServiceSection from "../components/ServiceSection.svelte";
+
+   import HeroSection from "../components/HeroSection.svelte";
+
+   import { Img, Heading, P, Button, Card, Rating } from "flowbite-svelte";
+   //import design from "$lib/assets/images/design.svg";
 </script>
 
-<Img
-   src="https://dummyimage.com/1200x500"
-   alt="sample 1"
-   size="max-w-lg"
-   alignment="mx-auto"
-/>
+<section class="m-6 flex flex-col gap-y-32">
+   <HeroSection />
+   <ServiceSection />
+   <PricePlans />
+   <section class="flex flex-col justify-center items-center">
+      <Heading tag="h1" class="text-4xl font-bold text-center">
+         Recommendations
+      </Heading>
+      <P
+         class="text-base leading-normal text-gray-500 capitalize my-6 text-center"
+         >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+         sint.<br /> Velit officia consequat duis enim velit mollit. lorem ipsum</P
+      >
+      <div class="grid md:grid-cols-3 gap-x-6 xl:gap-x-9">
+         <div class="mb-6 lg:mb-0">
+            <div
+               class="bg-white-card-background dark:bg-dark-card-background block rounded-lg shadow-lg"
+            >
+               <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img
+                     src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                     class="w-full rounded-t-lg"
+                     alt=""
+                  />
+                  <a href="#!">
+                     <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                     />
+                  </a>
+               </div>
+               <div class="p-6">
+                  <Heading class="text-lg font-bold mb-2">Halley Frank</Heading>
+                  <Heading class="text-base font-medium  mb-4">
+                     Marketing Specialist
+                  </Heading>
+                  <Rating
+                     total={5}
+                     rating={2.66}
+                     divClass="flex flex-row text-yellowClr"
+                  />
+                  <P>
+                     At vero eos et accusamus et iusto odio dignissimos ducimus
+                     qui blanditiis praesentium accusamus voluptatum deleniti
+                     atque corrupti.
+                  </P>
+               </div>
+            </div>
+         </div>
 
-<Heading class="p-8" tag="h1" customSize="text-3xl"
-   >Responsive Sidebar Layout</Heading
->
+         <div class="mb-6 lg:mb-0">
+            <div
+               class="bg-white-card-background dark:bg-dark-card-background block rounded-lg shadow-lg"
+            >
+               <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img
+                     src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                     class="w-full rounded-t-lg"
+                     alt=""
+                  />
+                  <a href="#!">
+                     <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                     />
+                  </a>
+               </div>
+               <div class="flex flex-col px-6 py-3 justify-center items-center">
+                  <Heading class="text-lg font-bold mb-2">John Doe</Heading>
+                  <Heading class="text-base font-medium  mb-4"
+                     >Web Developer</Heading
+                  >
+                  <Rating
+                     total={5}
+                     rating={1.66}
+                     divClass="flex flex-row text-yellowClr"
+                  />
+                  <P>
+                     Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                     placerat vulputate. Ut vulputate est non quam dignissim
+                     elementum. Donec a ullamcorper diam.
+                  </P>
+               </div>
+            </div>
+         </div>
 
-<P class="px-8 py-4">
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Amet cursus sit amet
-   dictum sit. Quis enim lobortis scelerisque fermentum dui faucibus in. Mattis
-   vulputate enim nulla aliquet porttitor lacus luctus accumsan. Ipsum dolor sit
-   amet consectetur adipiscing elit. Euismod nisi porta lorem mollis aliquam ut
-   porttitor. Tortor consequat id porta nibh. Tortor condimentum lacinia quis
-   vel eros donec ac odio. Elementum sagittis vitae et leo duis ut diam quam
-   nulla. Vel turpis nunc eget lorem.
-</P>
-<P class="px-8 py-4">
-   Aliquet porttitor lacus luctus accumsan. Ac orci phasellus egestas tellus
-   rutrum tellus. Non odio euismod lacinia at quis risus sed. Nam libero justo
-   laoreet sit amet cursus sit amet. Arcu odio ut sem nulla pharetra diam sit
-   amet nisl. Vulputate mi sit amet mauris commodo quis imperdiet. Malesuada
-   nunc vel risus commodo viverra. Eget nulla facilisi etiam dignissim diam quis
-   enim. Hac habitasse platea dictumst quisque. Ultrices gravida dictum fusce ut
-   placerat orci nulla pellentesque dignissim.
-</P>
-<P class="px-8 py-4">
-   Nec feugiat in fermentum posuere urna nec tincidunt praesent. Nulla pharetra
-   diam sit amet nisl suscipit adipiscing bibendum est. Eu turpis egestas
-   pretium aenean pharetra magna. Ultricies lacus sed turpis tincidunt id. Urna
-   nec tincidunt praesent semper feugiat nibh. Aliquam etiam erat velit
-   scelerisque in dictum non consectetur. Suspendisse in est ante in nibh mauris
-   cursus mattis molestie. Facilisi nullam vehicula ipsum a. Tellus pellentesque
-   eu tincidunt tortor aliquam nulla facilisi. Libero justo laoreet sit amet
-   cursus sit amet.
-</P>
+         <div class="mb-6 lg:mb-0">
+            <div
+               class="bg-white-card-background dark:bg-dark-card-background block rounded-lg shadow-lg"
+            >
+               <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                  <img
+                     src="https://mdbootstrap.com/img/new/avatars/15.jpg"
+                     class="w-full rounded-t-lg"
+                     alt=""
+                  />
+                  <a href="#!">
+                     <div
+                        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+                     />
+                  </a>
+               </div>
+               <div class="flex flex-col px-6 py-3 justify-center items-center">
+                  <Heading class="text-lg font-bold mb-2">Lisa Trey</Heading>
+                  <Heading class="text-base font-medium  mb-4">
+                     Public Relations
+                  </Heading>
+                  <Rating
+                     total={5}
+                     rating={4.8}
+                     divClass="flex flex-row text-yellowClr"
+                  />
+                  <P>
+                     Enim ad minima veniam, quis nostrum exercitationem ullam
+                     corporis suscipit laboriosam, nisi ut aliquid commodi quis
+                     nostrum minima.
+                  </P>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</section>

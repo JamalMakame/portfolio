@@ -1,24 +1,8 @@
 <script lang="ts">
    import "../app.css";
    import type { PageData } from "./$types";
-   import profileImage from "$lib/assets/images/profile-picture.png";
-   import { page } from "$app/stores";
    import { onMount } from "svelte";
-   import {
-      DarkMode,
-      Navbar,
-      NavBrand,
-      NavLi,
-      NavUl,
-      NavHamburger,
-      Sidebar,
-      SidebarGroup,
-      SidebarItem,
-      SidebarWrapper,
-      Drawer,
-      CloseButton,
-      Avatar,
-   } from "flowbite-svelte";
+   import { DarkMode, Drawer, CloseButton } from "flowbite-svelte";
    import { sineIn } from "svelte/easing";
    import LeftArm from "$lib/features/Drawa.svelte";
 
@@ -58,16 +42,12 @@
    const toggleDrawer = () => {
       drawerHidden = false;
    };
-   
+
    let darkmodebtn =
-      "text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-lg p-2.5 fixed right-2 top-12  md:top-3 md:right-2 z-50";
-   let divClass = "w-full md:block md:w-auto pr-8";
-   let ulClass =
-      "flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium";
+      "text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-lg p-2.5 fixed right-2 top-12  md:top-3 md:right-2 z-50";
 </script>
 
 <svelte:window bind:innerWidth={width} />
-
 
 <DarkMode btnClass={darkmodebtn} />
 <Drawer
@@ -79,6 +59,8 @@
    width="w-72"
    class="overflow-scroll pb-32 shadow-2xl"
    id="sidebar"
+   divClass="overflow-y-auto z-50 p-4 bg-white-card-background dark:bg-dark-card-background"
+   
 >
    <div class="flex items-center">
       <CloseButton

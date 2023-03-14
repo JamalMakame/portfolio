@@ -8,12 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#F0F0F6",
-        white: "#FFFFFF",
-        yellow: "#FFB400",
+        "white-background": "#F0F0F6",
+        "dark-background": "#18191A",
+        "white-card-background": "#FFFFFF",
+        "dark-card-background": "#242527",
+        "yellowClr": "#FFB400",
         "paragraph-font": "#767676",
         "dark-font": "#2B2B2B",
-        "available-font": "#7EB942",
+        "availableClr": "#7EB942",
       },
     },
   },
