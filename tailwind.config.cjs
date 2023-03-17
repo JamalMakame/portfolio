@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         "white-background": "#F0F0F6",
-        "dark-background": "#18191A",
+        "dark-background": "#111212",
         "white-card-background": "#FFFFFF",
-        "dark-card-background": "#242527",
+        "dark-card-background": "#000000",
         "yellowClr": "#FFB400",
         "paragraph-font": "#767676",
         "dark-font": "#2B2B2B",

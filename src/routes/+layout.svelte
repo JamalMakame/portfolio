@@ -4,7 +4,7 @@
    import { onMount } from "svelte";
    import { DarkMode, Drawer, CloseButton } from "flowbite-svelte";
    import { sineIn } from "svelte/easing";
-   import LeftArm from "$lib/features/Drawa.svelte";
+   import Drawa from "$lib/features/Drawa.svelte";
 
    let transitionParams = {
       x: -320,
@@ -50,29 +50,13 @@
 <svelte:window bind:innerWidth={width} />
 
 <DarkMode btnClass={darkmodebtn} />
-<Drawer
-   transitionType="fly"
-   {backdrop}
-   {transitionParams}
-   bind:hidden={drawerHidden}
-   bind:activateClickOutside
-   width="w-72"
-   class="overflow-scroll pb-32 shadow-2xl"
-   id="sidebar"
-   divClass="overflow-y-auto z-50 p-4 bg-white-card-background dark:bg-dark-card-background"
-   
->
-   <div class="flex items-center">
-      <CloseButton
-         on:click={() => (drawerHidden = true)}
-         class="mb-4 dark:text-white lg:hidden"
-      />
-   </div>
-   <LeftArm />
-</Drawer>
-
-<div class="flex px-4 mx-auto w-full">
-   <main class="lg:ml-72 w-full mx-auto">
+<section class="grid grid-cols-5 w-full mx-auto ">
+   <section
+      class="col-span-1  bg-white-card-background dark:bg-dark-card-background h-fit p-4 rounded-lg shadow-md mx-2"
+   >
+      <Drawa />
+   </section>
+   <section class="col-span-4">
       <slot />
-   </main>
-</div>
+   </section>
+</section>

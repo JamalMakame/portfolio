@@ -13,7 +13,7 @@
    import { Button, Hr } from "flowbite-svelte";
 </script>
 
-<section>
+<section class="">
    <aside class="flex flex-col items-center ">
       <ProfilePic />
       <Hr class="my-2 mx-auto md:my-10" width="w-52" height="h-1" />

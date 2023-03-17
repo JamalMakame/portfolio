@@ -16,9 +16,8 @@
    //import design from "$lib/assets/images/design.svg";
 </script>
 
-<Card
-      padding="xl"
-      class="bg-white-card-background dark:bg-dark-card-background"
+<div
+      class="bg-white-card-background dark:bg-dark-card-background p-9 rounded-lg shadow-md"
    >
       <h5 class="mb-4 text-2xl font-extrabold text-yellowClr text-center">
          Gold
@@ -163,5 +162,5 @@
          </li>
       </ul>
       <Button class="w-full" color="yellow">Order Now</Button>
-   </Card>
+   </div>
 
