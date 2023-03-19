@@ -2,7 +2,13 @@
    import "../app.css";
    import type { PageData } from "./$types";
    import { onMount } from "svelte";
-   import { DarkMode, Drawer, CloseButton } from "flowbite-svelte";
+   import {
+      DarkMode,
+      Drawer,
+      CloseButton,
+      Footer,
+      FooterCopyright,
+   } from "flowbite-svelte";
    import { sineIn } from "svelte/easing";
    import Drawa from "$lib/features/Drawa.svelte";
 
@@ -50,13 +56,9 @@
 <svelte:window bind:innerWidth={width} />
 
 <DarkMode btnClass={darkmodebtn} />
-<section class="grid grid-cols-5 w-full mx-auto ">
-   <section
-      class="col-span-1  bg-white-card-background dark:bg-dark-card-background h-fit p-4 rounded-lg shadow-md mx-2"
-   >
-      <Drawa />
-   </section>
-   <section class="col-span-4">
-      <slot />
-   </section>
+<slot />
+<section >
+   <Footer customClass="bg-white dark:bg-black py-6 " footerType="custom">
+      <FooterCopyright href="/" by="Flowbite™" year={2022} />
+   </Footer>
 </section>

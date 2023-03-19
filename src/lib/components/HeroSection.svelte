@@ -5,7 +5,7 @@
 </script>
 
  <section
-      class="bg-white-card-background dark:bg-dark-card-background shadow-lg rounded-md relative px-10 h-[467px] w-[970px] overflow-hidden"
+      class="bg-white-card-background dark:bg-dark-card-background shadow-lg rounded-md relative px-10 h-[467px] w-full overflow-hidden"
    >
       <img src={shimmerIcons} alt="Shimmering Icons" class="absolute inset-0" />
       <section class=" absolute ">

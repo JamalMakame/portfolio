@@ -1,19 +1,19 @@
 <script>
-   import WorkHistorySection from "../components/WorkHistorySection.svelte";
+   import LogoCloudSection from "$lib/components/LogoCloudSection.svelte";
 
-   import EducationSection from "../components/EducationSection.svelte";
+   import ContactSection from "$lib/components/ContactSection.svelte";
 
-   import RecommendationSection from "../components/RecommendationSection.svelte";
+   import BlogSection from "$lib/components/BlogSection.svelte";
 
-   import PricePlans from "../components/PricePlans.svelte";
+   import PortfolioSection from "$lib/components/PortfolioSection.svelte";
 
-   import ServiceSection from "../components/ServiceSection.svelte";
-
-   import HeroSection from "../components/HeroSection.svelte";
-
-   import { Img, Heading, P, Button, Card, Rating, Hr } from "flowbite-svelte";
-   import EducationTile from "../components/EducationTile.svelte";
-   //import design from "$lib/assets/images/design.svg";
+   import WorkHistorySection from "$lib/components/WorkHistorySection.svelte";
+   import EducationSection from "$lib/components/EducationSection.svelte";
+   import RecommendationSection from "$lib/components/RecommendationSection.svelte";
+   import PricePlans from "$lib/components/PricePlans.svelte";
+   import ServiceSection from "$lib/components/ServiceSection.svelte";
+   import HeroSection from "$lib/components/HeroSection.svelte";
+   import { Heading, P, Tabs, TabItem } from "flowbite-svelte";
 </script>
 
 <section class="m-6 flex flex-col gap-y-32">
@@ -23,4 +23,8 @@
    <RecommendationSection />
    <EducationSection />
    <WorkHistorySection />
+   <PortfolioSection />
+   <BlogSection />
+   <ContactSection />
+   <LogoCloudSection />
 </section>
