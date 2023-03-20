@@ -13,7 +13,6 @@
    import PricePlans from "$lib/components/PricePlans.svelte";
    import ServiceSection from "$lib/components/ServiceSection.svelte";
    import HeroSection from "$lib/components/HeroSection.svelte";
-   import { Heading, P, Tabs, TabItem } from "flowbite-svelte";
 </script>
 
 <section class="m-6 flex flex-col gap-y-32">
